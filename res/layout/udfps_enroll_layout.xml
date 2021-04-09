@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.settings.biometrics.fingerprint.UdfpsEnrollLayout android:orientation="vertical" android:id="@id/setup_wizard_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?fingerprint_layout_theme"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="?sudGlifHeaderGravity" android:id="@id/sud_layout_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fingerprint_header" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" style="@style/SudGlifIcon" />
+    <TextView android:id="@id/suc_layout_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" style="@style/SudGlifHeaderTitle" />
+    <Space android:id="@id/space_below_title" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <FrameLayout android:id="@id/description_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/sud_layout_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/security_settings_fingerprint_enroll_start_message" style="@style/SudDescription.Glif" />
+        <TextView android:id="@id/repeat_message" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/security_settings_fingerprint_enroll_repeat_message" style="@style/SudDescription.Glif" />
+    </FrameLayout>
+    <TextView android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:id="@id/error_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" android:accessibilityLiveRegion="polite" style="@style/TextAppearance.ErrorText" />
+    <Space android:id="@id/space_above_animation" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.android.settings.widget.RingProgressBar android:layout_gravity="center" android:id="@id/fingerprint_progress_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:progress="0" android:minHeight="@dimen/fingerprint_progress_bar_min_size" />
+</com.android.settings.biometrics.fingerprint.UdfpsEnrollLayout>

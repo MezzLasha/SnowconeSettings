@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout android:id="@id/setup_wizard_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:sucHeaderText="@string/multi_biometric_enroll_title" style="?face_layout_theme"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/SudContentFrame">
+        <com.google.android.setupdesign.view.RichTextView android:id="@id/sud_layout_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/multi_biometric_enroll_subtitle" style="@style/SudDescription.Glif" />
+        <com.google.android.setupdesign.view.IllustrationVideoView android:id="@id/illustration_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:sudVideo="@raw/face_settings" style="@style/SudContentIllustration" />
+        <TextView android:gravity="start" android:id="@id/setup_with" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/multi_biometric_enroll_setup_with" style="@style/SudDescription.Glif" />
+        <include layout="@layout/horizontal_divider" />
+        <com.android.settings.biometrics.BiometricEnrollCheckbox android:id="@id/checkbox_face" android:layout_width="fill_parent" android:layout_height="wrap_content" app:description="@string/multi_biometric_enroll_face_unlock_description" app:icon="@drawable/ic_face_24dp" app:title="@string/multi_biometric_enroll_face_unlock_title" />
+        <include layout="@layout/horizontal_divider" />
+        <com.android.settings.biometrics.BiometricEnrollCheckbox android:id="@id/checkbox_fingerprint" android:layout_width="fill_parent" android:layout_height="wrap_content" app:description="@string/multi_biometric_enroll_fingerprint_unlock_description" app:icon="@drawable/ic_fingerprint_24dp" app:title="@string/multi_biometric_enroll_fingerprint_unlock_title" />
+        <include layout="@layout/horizontal_divider" />
+    </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.setupdesign.GlifLayout android:id="@id/setup_wizard_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?fingerprint_layout_theme"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SudContentFrame">
+        <com.google.android.setupdesign.view.RichTextView android:id="@id/sud_layout_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/security_settings_fingerprint_enroll_introduction_message" style="@style/SudDescription.Glif" />
+        <com.google.android.setupdesign.view.RichTextView android:id="@id/error_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SudDescription.Glif" />
+        <com.google.android.setupdesign.view.FillContentLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/fingerprint_enroll_introduction" android:contentDescription="@null" style="@style/SudContentIllustration" />
+        </com.google.android.setupdesign.view.FillContentLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_info_outline_24dp" android:contentDescription="@null" />
+            <com.google.android.setupdesign.view.RichTextView android:id="@id/sud_layout_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/security_settings_fingerprint_enroll_introduction_bottom_message" style="@style/SudDescription.Glif" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

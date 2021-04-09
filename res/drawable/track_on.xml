@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/track_on_background" />
+    <item android:gravity="center" android:height="10.059998dip" android:width="13.189972dip" android:drawable="@drawable/track_on_indicator" android:right="19.0dip" />
+</layer-list>

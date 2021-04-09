@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="advanced_outline_color">#ffffffff</color>
+    <color name="contextual_card_background">@android:color/material_red_A100</color>
+    <color name="dialog_background">@android:color/material_grey_850</color>
+    <color name="face_intro_outline">?android:colorAccent</color>
+    <color name="gestures_setting_background_color">@android:color/black</color>
+    <color name="homepage_accessibility_background">#ff783be5</color>
+    <color name="homepage_support_background">#ff3f5fbd</color>
+    <color name="notification_history_background">#ff202124</color>
+    <color name="notification_importance_button_selected">#ffaecbfa</color>
+    <color name="notification_importance_button_unselected">#ff5f6368</color>
+    <color name="notification_importance_selection_bg">@android:color/material_grey_850</color>
+    <color name="palette_list_color_blue">@color/palette_list_dark_mode_color_blue</color>
+    <color name="palette_list_color_cyan">@color/palette_list_dark_mode_color_cyan</color>
+    <color name="palette_list_color_gray">@color/palette_list_dark_mode_color_gray</color>
+    <color name="palette_list_color_green">@color/palette_list_dark_mode_color_green</color>
+    <color name="palette_list_color_orange">@color/palette_list_dark_mode_color_orange</color>
+    <color name="palette_list_color_purple">@color/palette_list_dark_mode_color_purple</color>
+    <color name="palette_list_color_red">@color/palette_list_dark_mode_color_red</color>
+    <color name="palette_list_color_yellow">@color/palette_list_dark_mode_color_yellow</color>
+    <color name="palette_list_gradient_background">@android:color/black</color>
+    <color name="search_bar_background">@android:color/material_grey_850</color>
+    <color name="switchbar_switch_thumb_tint">@android:color/black</color>
+    <color name="switchbar_switch_track_tint">#82000000</color>
+    <color name="title_text_color">@android:color/primary_text_dark</color>
+    <color name="homepage_card_dismissal_background">@android:color/material_red_A100</color>
+</resources>

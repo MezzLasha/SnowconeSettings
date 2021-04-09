@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="32.0dip" android:paddingBottom="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Display1" android:textSize="20.0sp" android:ellipsize="marquee" android:id="@id/usage_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignBaseline="@id/total_summary" android:fontFamily="@android:string/config_keyguardComponent" android:layout_alignParentStart="true" />
+        <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Body1" android:ellipsize="marquee" android:id="@id/total_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ProgressBar android:id="@android:id/progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:max="100" android:scaleY="2.0" style="?android:progressBarStyleHorizontal" />
+</LinearLayout>

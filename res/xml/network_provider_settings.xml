@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/provider_internet_settings" settings:keywords="@string/keywords_wifi"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+    <com.android.settingslib.widget.LayoutPreference android:layout="@layout/resetting_internet" android:title="@string/resetting_internet_text" android:selectable="false" android:key="resetting_your_internet" settings:allowDividerBelow="true" />
+    <com.android.settingslib.widget.LayoutPreference android:layout="@layout/view_airplane_mode_networks_button" android:title="@string/condition_airplane_title" android:selectable="false" android:key="view_airplane_mode_netwokrs_button" settings:allowDividerBelow="true" />
+    <PreferenceCategory android:layout="@layout/preference_category_no_label" android:key="connected_access_point" />
+    <PreferenceCategory android:layout="@layout/preference_category_no_label" android:title="@string/summary_placeholder" android:key="provider_model_mobile_network" settings:controller="com.android.settings.network.NetworkMobileProviderController" />
+    <PreferenceCategory android:layout="@layout/preference_category_no_label" android:key="access_points" />
+    <Preference android:title="@string/network_and_internet_preferences_title" android:key="configure_wifi_settings" android:summary="@string/network_and_internet_preferences_summary" android:fragment="com.android.settings.wifi.ConfigureWifiSettings" settings:allowDividerAbove="true" />
+    <Preference android:title="@string/wifi_saved_access_points_label" android:key="saved_networks" android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2" />
+    <com.android.settings.datausage.DataUsagePreference android:title="@string/non_carrier_data_usage" android:key="non_carrier_data_usage" />
+</PreferenceScreen>

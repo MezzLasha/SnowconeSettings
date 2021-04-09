@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/transcode_settings_title" settings:searchable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference android:title="@string/transcode_user_control" android:key="transcode_user_control" settings:controller="com.android.settings.development.transcode.TranscodeUserControlPreferenceController" />
+    <SwitchPreference android:title="@string/transcode_enable_all" android:key="transcode_enable_all" settings:controller="com.android.settings.development.transcode.TranscodeGlobalTogglePreferenceController" />
+    <SwitchPreference android:title="@string/transcode_default" android:key="transcode_default" settings:controller="com.android.settings.development.transcode.TranscodeDefaultOptionPreferenceController" />
+</PreferenceScreen>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/swipe_bottom_to_notifications_title"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+    <com.android.settings.widget.VideoPreference android:title="@string/swipe_bottom_to_notifications_title" settings:animation="@raw/gesture_fingerprint_swipe" settings:controller="com.android.settings.widget.VideoPreferenceController" settings:preview="@drawable/gesture_fingerprint_swipe" />
+    <SwitchPreference android:title="@string/swipe_bottom_to_notifications_title" android:key="gesture_swipe_bottom_to_notification" android:summary="@string/swipe_bottom_to_notifications_summary" settings:allowDividerAbove="true" settings:controller="com.android.settings.gestures.SwipeBottomToNotificationPreferenceController" />
+</PreferenceScreen>

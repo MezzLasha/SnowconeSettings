@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/location_time_zone_detection_screen_title"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference android:title="@string/location_time_zone_detection_enabled_title" android:key="location_time_zone_detection_enabled" android:summary="@string/location_time_zone_detection_enabled_description" settings:controller="com.android.settings.datetime.locationtimezone.TimeZoneDetectionTogglePreferenceController" />
+</PreferenceScreen>

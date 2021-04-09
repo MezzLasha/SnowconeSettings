@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:persistent="false" android:title="@string/accessibility_settings" android:key="accessibility_settings_screen"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:persistent="false" android:title="@string/user_installed_services_category_title" android:key="user_installed_services_category" />
+    <PreferenceCategory android:persistent="false" android:title="@string/screen_reader_category_title" android:key="screen_reader_category">
+        <Preference android:persistent="false" android:title="@string/tts_settings_title" android:key="tts_settings_preference" android:fragment="com.android.settings.tts.TextToSpeechSettings" settings:controller="com.android.settings.language.TtsPreferenceController" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/display_category_title" android:key="display_category">
+        <Preference android:persistent="false" android:title="@string/accessibility_text_and_display_title" android:key="text_and_display_preference_screen" android:fragment="com.android.settings.accessibility.TextAndDisplayFragment" settings:searchable="true" />
+        <Preference android:icon="@drawable/ic_accessibility_magnification" android:persistent="false" android:title="@string/accessibility_screen_magnification_title" android:key="magnification_preference_screen" android:fragment="com.android.settings.accessibility.MagnificationPreferenceFragment" settings:controller="com.android.settings.accessibility.MagnificationPreferenceController" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/interaction_control_category_title" android:key="interaction_control_category">
+        <Preference android:persistent="false" android:title="@string/accessibility_tap_assistance_title" android:key="tap_assistance_preference_screen" android:fragment="com.android.settings.accessibility.TapAssistanceFragment" settings:searchable="true" />
+        <Preference android:title="@string/accessibility_system_controls_title" android:key="system_controls_preference_screen" android:fragment="com.android.settings.accessibility.SystemControlsFragment" settings:searchable="true" />
+        <Preference android:persistent="false" android:title="@string/accessibility_vibration_settings_title" android:key="vibration_preference_screen" android:fragment="com.android.settings.accessibility.VibrationSettings" settings:controller="com.android.settings.accessibility.VibrationPreferenceController" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/audio_and_captions_category_title" android:key="audio_and_captions_category">
+        <Preference android:persistent="false" android:title="@string/live_caption_title" android:key="live_caption" android:summary="@string/live_caption_summary" settings:controller="com.android.settings.accessibility.LiveCaptionPreferenceController" settings:searchable="false" />
+        <Preference android:persistent="false" android:title="@string/accessibility_hearingaid_title" android:key="hearing_aid_preference" android:summary="@string/accessibility_hearingaid_not_connected_summary" settings:controller="com.android.settings.accessibility.AccessibilityHearingAidPreferenceController" />
+        <Preference android:persistent="false" android:title="@string/accessibility_audio_adjustment_title" android:key="audio_adjustment_preference_screen" android:fragment="com.android.settings.accessibility.AudioAdjustmentFragment" settings:searchable="true" />
+        <Preference android:title="@string/rtt_settings_title" android:key="rtt_setting" android:summary="@string/summary_placeholder" settings:controller="com.android.settings.accessibility.RTTSettingPreferenceController" />
+        <Preference android:persistent="false" android:title="@string/accessibility_captioning_title" android:key="captioning_preference_screen" android:fragment="com.android.settings.accessibility.CaptionPropertiesFragment" settings:controller="com.android.settings.accessibility.CaptioningPreferenceController" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/experimental_category_title" android:key="experimental_category" settings:initialExpandedChildrenCount="1">
+        <SwitchPreference android:persistent="false" android:title="@string/accessibility_shortcut_service_on_lock_screen_title" android:key="accessibility_shortcut_preference" android:summary="@string/accessibility_shortcut_description" settings:controller="com.android.settings.accessibility.AccessibilityShortcutPreferenceController" />
+    </PreferenceCategory>
+</PreferenceScreen>
